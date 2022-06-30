@@ -35,7 +35,12 @@ const Register = () => {
         // Post veterinarian to the API
         try {
             await axiosClient.post('/veterinarians', { name, email, password })
-            setAlert({msg: 'Cuenta creada correctamente, revisa tu email', error: false})
+            setAlert({msg: 'Cuenta creada correctamente, inicia sesión', error: false})
+
+            setName('')
+            setEmail('')
+            setPassword('')
+            setRepeatPassword('')
         } catch (error) {
             setAlert({
                 msg: error.response.data.msg,

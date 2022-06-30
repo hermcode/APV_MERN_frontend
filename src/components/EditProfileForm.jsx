@@ -76,7 +76,7 @@ const EditProfileForm = () => {
             />
           </div>
           <div className='mb-5'>
-            <label htmlFor='telephone' className="text-grayishblack block text-xl font-bold">Telefono:</label>
+            <label htmlFor='telephone' className="text-grayishblack block text-xl font-bold">Teléfono:</label>
             <input
               type="phone"
               placeholder="Ingresa tu número telefónico"
